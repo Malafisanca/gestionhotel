@@ -8,11 +8,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Accueil')),
+      //appBar: AppBar(title: Text('Accueil')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          
           children: [
+            Padding(
+              padding: EdgeInsets.all(16),
+              child: GridView.count(
+                crossAxisCount: 2,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
+                children: [
+                  Container(
+
+                  )
+                ],
+                ),
+            ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -35,52 +49,62 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-       drawer: Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Text(
-              'Menu',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
-            ),
-          ),
-          ListTile(
-            title: Text('Accueil'),
-            onTap: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => HomePage()),
-              );
-            },
-          ),
-          ListTile(
-            title: Text('Réserver une chambre'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Reservation()),
-              );
-            },
-          ),
-          ListTile(
-            title: Text('Commander un repas'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => RestourationPage()),
-              );
-            },
-          ),
+      bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.grey,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Accueil"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Recherche"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.history), label: "Historique"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profil"),
         ],
       ),
-    )
+      //    drawer: Drawer(
+      //   child: ListView(
+      //     padding: EdgeInsets.zero,
+      //     children: [
+      //       DrawerHeader(
+      //         decoration: BoxDecoration(
+      //           color: Colors.blue,
+      //         ),
+      //         child: Text(
+      //           'Menu',
+      //           style: TextStyle(
+      //             color: Colors.white,
+      //             fontSize: 24,
+      //           ),
+      //         ),
+      //       ),
+      //       ListTile(
+      //         title: Text('Accueil'),
+      //         onTap: () {
+      //           Navigator.pushReplacement(
+      //             context,
+      //             MaterialPageRoute(builder: (context) => HomePage()),
+      //           );
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: Text('Réserver une chambre'),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(builder: (context) => Reservation()),
+      //           );
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: Text('Commander un repas'),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(builder: (context) => RestourationPage()),
+      //           );
+      //         },
+      //       ),
+      //     ],
+      //   ),
+      // )
     );
   }
 }
