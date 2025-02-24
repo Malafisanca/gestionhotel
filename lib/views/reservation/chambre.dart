@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 
 class Chambre extends StatefulWidget {
+
   static var length;
 
   const Chambre({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ChambreState createState() => _ChambreState();
 }
 
@@ -91,7 +93,7 @@ class _ChambreState extends State<Chambre> {
                           return FadeInUp(
                             child: Card(
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                              elevation: 5,
+                              elevation: 3,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [

@@ -106,7 +106,7 @@ class Inscription extends StatelessWidget {
                   padding: EdgeInsets.only(bottom: 32, top: 10),
                   child: ElevatedButton(
                     onPressed: () {
-                     
+                      Navigator.pop(context);
                       valideCamps();
                     },
                     style: ElevatedButton.styleFrom(

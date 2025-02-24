@@ -10,7 +10,7 @@ class Reservation extends  StatefulWidget {
 class _ReservationState extends State<Reservation> {
   DateTime? _selectedDate;
   String? _selectedRoomType;
-  final List<String> _roomTypes = ['Simple', 'Double', 'Suite'];
+  final List<String> _roomTypes = ["Tous", "Deluxe", "Suite", "Standard", "Familiale"];
 
   void _selectDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(

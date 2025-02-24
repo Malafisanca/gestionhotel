@@ -11,7 +11,7 @@ class _RestourationPageState extends State<RestourationPage> {
   // String? _selectedMeal;
   // final List<String> _meals = ['Petit déjeuner', 'Déjeuner', 'Dîner'];
   final List<Map<String, dynamic>> _menu = [
-    {'name': 'Pizza', 'price': 12.0, 'image': 'https://via.placeholder.com/150'},
+    {'name': 'Pizza', 'price': 12.0, 'image': 'assets/images/room1.png'},
     {'name': 'Burger', 'price': 8.0, 'image': 'https://via.placeholder.com/150'},
     {'name': 'Salade', 'price': 6.5, 'image': 'https://via.placeholder.com/150'},
     {'name': 'Pâtes', 'price': 10.0, 'image': 'https://via.placeholder.com/150'},
@@ -107,47 +107,5 @@ class _RestourationPageState extends State<RestourationPage> {
         ],
       ),
     );
-    // return Scaffold(
-    //   appBar: AppBar(title: Text('Commande de restauration')),
-    //   body: Padding(
-    //     padding: EdgeInsets.all(16.0),
-    //     child: Column(
-    //       children: [
-    //         Text('Sélectionner un repas:'),
-    //         SizedBox(height: 8.0),
-    //         DropdownButton<String>(
-    //           value: _selectedMeal,
-    //           hint: Text('Choisir un repas'),
-    //           items: _meals.map((String meal) {
-    //             return DropdownMenuItem<String>(
-    //               value: meal,
-    //               child: Text(meal),
-    //             );
-    //           }).toList(),
-    //           onChanged: (String? newValue) {
-    //             setState(() {
-    //               _selectedMeal = newValue;
-    //             });
-    //           },
-    //         ),
-    //         SizedBox(height: 16.0),
-    //         ElevatedButton(
-    //           onPressed: () {
-    //             if (_selectedMeal != null) {
-    //               ScaffoldMessenger.of(context).showSnackBar(
-    //                 SnackBar(content: Text('Commande confirmée pour $_selectedMeal')),
-    //               );
-    //             } else {
-    //               ScaffoldMessenger.of(context).showSnackBar(
-    //                 SnackBar(content: Text('Veuillez sélectionner un repas.')),
-    //               );
-    //             }
-    //           },
-    //           child: Text('Confirmer la commande'),
-    //         ),
-    //       ],
-    //     ),
-    //   ),
-    // );
   }
 }

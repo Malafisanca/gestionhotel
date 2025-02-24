@@ -48,7 +48,7 @@ class _HotelsState extends State<Hotels> {
                   width: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
-                    image: DecorationImage(image: AssetImage('assets/images/profile.jpg'),
+                    image: DecorationImage(image: AssetImage("assets/images/room1.png"),
                     fit: BoxFit.cover
                     ),
                     boxShadow: [

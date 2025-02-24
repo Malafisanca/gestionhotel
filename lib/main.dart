@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-//import 'package:gestionhoter/views/reservation/chambre.dart';
-//import 'package:gestionhoter/profile/connexion.dart';
+import 'package:gestionhoter/profile/connexion.dart';
 //import 'package:gestionhoter/views/home/home_page.dart';
-//import 'package:gestionhoter/views/reservation/chambre.dart';
-import 'package:gestionhoter/hotels.dart';
-//import 'package:gestionhoter/views/home/home_page.dart';
+//import 'package:gestionhoter/hotels.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Gestion hotel",
       debugShowCheckedModeBanner: false,
-      home: Hotels(),
+      home: Connexion(),
       // theme: ThemeData(
       //   primaryColor: Color(0xff075E54)
       // ),
