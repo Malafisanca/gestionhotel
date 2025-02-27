@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gestionhoter/views/home/recherche.dart';
+import 'package:gestionhoter/views/home/room.dart';
 import 'package:gestionhoter/views/reservation/chambre.dart';
 import 'package:gestionhoter/views/reservation/reservation.dart';
 import 'package:gestionhoter/views/restauration/restouration_page.dart';
@@ -18,6 +19,7 @@ class HomePage extends StatelessWidget {
             children: [
               Recherche(),
               SizedBox(height: 10,),
+              Room(),
               Container(
                height: 400,
                 color: Colors.white,
